@@ -1,0 +1,26 @@
+# dual ec prng backdoor poc
+
+Usage: run the main method in [DualEcPrngBackdoorPoc.java](src/main/java/com/leadroyal/DualEcPrngBackdoorPoc.java).
+
+depends on : bouncycastle
+
+### demo output (with random seed)
+
+```
+e 5ccbc088080e9e9bf384de837662bcdfbece6b4c41f5b3ce88268f844c40cf25
+ri f079737c7ba1e17b1b2d3881b0b7e1ac5c18bb580173458f53951a5ff0ad1330
+currentRandom(ti) 2C78CAEDAD6AFC58B59CD38DECB3D45B755904E635C185BAB84862CCDC65A967
+currentRandom240(ti) CAEDAD6AFC58B59CD38DECB3D45B755904E635C185BAB84862CCDC65A967
+nextPoint (473f7a57818d99378c05b7d7851368f785fdaabca5e9370617c75b8de196a331,776fbc4577e20079a5751b1a64ba4ee34703c17aa90c0b317601d7d84cbd711e,1,ffffffff00000001000000000000000000000000fffffffffffffffffffffffc)
+process 0/256
+process 1/256
+...
+process 43/256
+process 44/256
+hit!
+predict nextPoint 1:(473f7a57818d99378c05b7d7851368f785fdaabca5e9370617c75b8de196a331,889043b9881dff875a8ae4e59b45b11cb8fc3e8656f3f4ce89fe2827b3428ee1,1,ffffffff00000001000000000000000000000000fffffffffffffffffffffffc)
+predict nextPoint 2:(473f7a57818d99378c05b7d7851368f785fdaabca5e9370617c75b8de196a331,776fbc4577e20079a5751b1a64ba4ee34703c17aa90c0b317601d7d84cbd711e,1,ffffffff00000001000000000000000000000000fffffffffffffffffffffffc)
+predict success!
+
+Process finished with exit code 0
+```
