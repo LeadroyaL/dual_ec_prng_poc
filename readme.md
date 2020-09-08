@@ -1,5 +1,7 @@
 # dual ec prng backdoor poc
 
+DOC：[docs.md](docs.md)
+
 Usage: run the main method in [DualEcPrngBackdoorPoc.java](src/main/java/com/leadroyal/DualEcPrngBackdoorPoc.java).
 
 depends on : bouncycastle
